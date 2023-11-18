@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,4 +26,79 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+/* Pills styling */
+
+.pills {
+  position: relative;
+  font-size: 14px;
+  padding: 0.7rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 22.5rem;
+  background: linear-gradient(#080808, #080808) padding-box,
+    linear-gradient(to left, rgba(52, 52, 52, 0.5), #343434) border-box;
+  backdrop-filter: blur(10px);
+}
+
+.pills-text {
+  background: linear-gradient(90deg, #ababab 0%, #2d2d2d 102.73%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.user-pills {
+  pointer-events: none;
+  position: relative;
+  font-size: 14px;
+  padding: 0.7rem 1rem;
+  padding-right: 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 22.5rem;
+  background: linear-gradient(#080808, #080808) padding-box,
+    linear-gradient(to right, rgba(52, 52, 52, 0.5), #343434) border-box;
+  backdrop-filter: blur(10px);
+}
+
+.user-pills-text {
+  background: linear-gradient(-45deg, #ababab 0%, #2d2d2d 102.73%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.user-pills-details {
+  border: 1px solid #343434;
+  background: rgba(9, 9, 9, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.user-pills:hover,
+.user-pills-details:hover .user-pills {
+  border: 1px solid rgba(235, 58, 74, 0.5) !important;
+  background: rgba(235, 58, 74, 0.1) !important;
+}
+
+.user-pills:hover .user-pills-text,
+.user-pills-details:hover .user-pills-text {
+  background: unset;
+  background-clip: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  color: rgba(235, 58, 74, 0.5) !important;
+}
+
+.code {
+  color: #95959d;
+}
+
+@media screen and (max-width: 768px) {
+  .user-pills,
+  .pills {
+    padding: 0.4rem 0.6rem;
+  }
+  .user-pills img {
+    width: 24px;
+  }
 }
