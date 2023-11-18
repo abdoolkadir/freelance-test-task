@@ -102,3 +102,9 @@ body {
     width: 24px;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .hero-bg {
+    background-position: center !important;
+  }
+}

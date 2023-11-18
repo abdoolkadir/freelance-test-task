@@ -19,7 +19,7 @@ const ValueSection = (props: Props) => {
     }
   }, [controls, isInView]);
   return (
-    <section id="value-section" className="py-20 px-5 md:px-0 relative">
+    <section id="value-section" className="py-20 px-5 lg:px-0 relative">
       <div ref={ref} className="text-center mb-8">
         <motion.h1
           variants={{
@@ -29,7 +29,7 @@ const ValueSection = (props: Props) => {
           initial="hidden"
           animate={controls}
           transition={{ duration: 0.4, delay: 0.25 }}
-          className={`${font.intergralCf} text-xl md:text-6xl text-[#E4E4E7] mb-8`}
+          className={`${font.intergralCf} text-xl md:text-3xl lg:text-6xl text-[#E4E4E7] mb-8`}
         >
           The value network<span className="block">of gaming</span>
         </motion.h1>
@@ -49,7 +49,7 @@ const ValueSection = (props: Props) => {
         </motion.p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto z-50 relative">
         {HomepageValueSection.map(({ text, subtext, image }, index: number) => (
           <Card
             key={index}
@@ -69,7 +69,7 @@ const ValueSection = (props: Props) => {
           alt="background image element"
         />
       </div>
-      <div className="hidden md:block absolute top-[250px] left-[50px]">
+      <div className="hidden md:block absolute md:top-[150px] lg:top-[250px] left-[50px]">
         <Image
           src="/images/sphere-2.png"
           width={55}

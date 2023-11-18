@@ -21,8 +21,8 @@ const NewGamingWebSection = (props: Props) => {
   }, [controls, isInView]);
 
   return (
-    <section id="value-section" className="py-24 relative px-5 md:px-28 mb-28">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-10 relative z-40">
+    <section id="value-section" className="py-24 relative px-5 lg:px-28 mb-28">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-8 mb-10 relative z-40">
         <div ref={ref} className="w-full">
           <motion.h1
             variants={{
@@ -32,7 +32,7 @@ const NewGamingWebSection = (props: Props) => {
             initial="hidden"
             animate={controls}
             transition={{ duration: 0.4, delay: 0.25 }}
-            className={`${font.intergralCf} text-xl md:text-5xl text-[#E4E4E7] mb-8`}
+            className={`${font.intergralCf} text-xl md:text-3xl lg:text-5xl text-[#E4E4E7] mb-8`}
           >
             The New<span className="block">Gaming Web</span>
           </motion.h1>

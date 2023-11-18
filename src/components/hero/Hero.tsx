@@ -12,15 +12,15 @@ type Props = {};
 const Hero = (props: Props) => {
   return (
     <div
-      className="min-h-screen flex flex-col md:flex-row items-center justify-center z-20 pt-10 md:pt-0 px-5 md:px-28 relative"
+      className="min-h-screen flex flex-col lg:flex-row items-center justify-center z-20 pt-10 lg:pt-0 px-5 lg:px-28 relative hero-bg"
       style={{
         backgroundImage: "url('/images/Hero.webp')",
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
+        backgroundPosition: 'top',
         backgroundSize: 'contain'
       }}
     >
-      <div className="flex-1 mb-10 md:mb-0">
+      <div className="flex-1 mb-10 lg:mb-0">
         <div className="flex flex-col gap-4 mb-5">
           <p
             className={`${font.lexend} uppercase text-primary text-xs animate-fade-in [--animation-delay:100ms] opacity-0 translate-y-[-1rem]`}
@@ -28,7 +28,7 @@ const Hero = (props: Props) => {
             Lorem ipsum dolor
           </p>
           <h1
-            className={`${font.intergralCf} text-xl md:text-6xl text-[#E4E4E7] animate-fade-in [--animation-delay:130ms] opacity-0 translate-y-[-1rem]`}
+            className={`${font.intergralCf} text-xl md:text-3xl lg:text-6xl text-[#E4E4E7] animate-fade-in [--animation-delay:130ms] opacity-0 translate-y-[-1rem]`}
           >
             Game-changing
             <span className="block animate-fade-in [--animation-delay:150ms] opacity-0 translate-y-[-1rem]">
@@ -52,7 +52,7 @@ const Hero = (props: Props) => {
       </div>
 
       <div className="flex-1 flex flex-col items-center justify-center relative">
-        <div className="animate-pulse absolute top-[-50px] md:top-[-100px] right-0 left-0 z-20 max-w-[300px] md:max-w-[500px] w-full flex justify-center items-center">
+        <div className="animate-pulse absolute top-[-50px] lg:top-[-100px] right-0 left-0 z-20 max-w-[300px] lg:max-w-[500px] w-full flex justify-center items-center">
           <Image
             src="/images/bg-play-icons.png"
             width={420}
@@ -94,7 +94,7 @@ const Hero = (props: Props) => {
         </div>
       </div>
 
-      <div className="absolute bottom-[-50px] md:bottom-[80px] right-0 left-0 flex flex-col items-center justify-center text-primary pb-2">
+      <div className="absolute bottom-[-50px] lg:bottom-[80px] right-0 left-0 flex flex-col items-center justify-center text-primary pb-2">
         <a
           href="#value-section"
           className="motion-safe:animate-bounce flex flex-col items-center justify-center"
