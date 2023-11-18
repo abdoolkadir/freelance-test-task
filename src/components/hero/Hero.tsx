@@ -94,7 +94,7 @@ const Hero = (props: Props) => {
         </div>
       </div>
 
-      <div className="absolute bottom-[-50px] md:bottom-0 right-0 left-0 flex flex-col items-center justify-center text-primary pb-2">
+      <div className="absolute bottom-[-50px] md:bottom-[80px] right-0 left-0 flex flex-col items-center justify-center text-primary pb-2">
         <a
           href="#value-section"
           className="motion-safe:animate-bounce flex flex-col items-center justify-center"

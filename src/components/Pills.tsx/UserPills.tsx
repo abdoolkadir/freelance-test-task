@@ -23,40 +23,45 @@ const UserPills = ({ username, image, right, code }: Props) => {
     }
   }, [isInView]);
 
-  const UserPill = ({ className }: { className?: string }) => {
-    return (
-      <motion.div
-        variants={{
-          hidden: { opacity: 0, y: 75 },
-          visible: { opacity: 1, y: 0 }
-        }}
-        initial="hidden"
-        animate={controls}
-        transition={{ duration: 0.5, delay: 0.25 }}
-        className={`user-pills flex items-center gap-3 relative transition-all ${className}`}
-      >
-        <Image
-          src={image}
-          height={50}
-          width={50}
-          alt="user image"
-          className="rounded-full"
-        />
-        <div className="user-pills-text text-xs text-sm">{username}</div>
-      </motion.div>
-    );
-  };
-
   return (
     <>
       <div ref={ref} className={`${font.lexend} relative group`}>
-        <UserPill />
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 }
+          }}
+          initial="hidden"
+          animate={controls}
+          transition={{ duration: 0.5, delay: 0.25 }}
+          className={`user-pills flex items-center gap-3 relative transition-all`}
+        >
+          <Image
+            src={image}
+            height={50}
+            width={50}
+            alt="user image"
+            className="rounded-full"
+          />
+          <div className="user-pills-text text-xs text-sm">{username}</div>
+        </motion.div>
         <div
           className={`user-pills-details md:w-[550px] absolute z-50 top-0 rounded-lg p-5 hidden opacity-0  group-hover:block group-hover:opacity-100 hover:block hover:opacity-100 transition-all  ${
             right ? 'right-0' : 'left-0'
           }`}
         >
-          <UserPill className="w-fit mb-2" />
+          <div
+            className={`user-pills flex items-center gap-3 relative transition-all w-fit mb-2`}
+          >
+            <Image
+              src={image}
+              height={50}
+              width={50}
+              alt="user image"
+              className="rounded-full"
+            />
+            <div className="user-pills-text text-xs text-sm">{username}</div>
+          </div>
 
           <pre className="ml-5 text-[7px] md:text-xs">
             <code className="code">{code}</code>
