@@ -14,7 +14,7 @@ const Hero = (props: Props) => {
     <div
       className="min-h-screen flex flex-col md:flex-row items-center justify-center z-20 pt-10 md:pt-0 px-5 md:px-28 relative"
       style={{
-        backgroundImage: "url('/images/hero.webp')",
+        backgroundImage: "url('/images/Hero.webp')",
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'contain'
