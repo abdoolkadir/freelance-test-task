@@ -52,7 +52,7 @@ const Hero = (props: Props) => {
       </div>
 
       <div className="flex-1 flex flex-col items-center justify-center relative">
-        <div className="animate-pulse absolute top-[-50px] lg:top-[-100px] right-0 left-0 z-20 max-w-[300px] lg:max-w-[500px] w-full flex justify-center items-center">
+        <div className="animate-pulse absolute top-[-50px] lg:top-[-100px] right-0 left-0 z-20 w-full flex justify-center items-center">
           <Image
             src="/images/bg-play-icons.png"
             width={420}

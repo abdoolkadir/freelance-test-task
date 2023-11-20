@@ -22,8 +22,8 @@ const NewGamingWebSection = (props: Props) => {
 
   return (
     <section id="value-section" className="py-24 relative px-5 lg:px-28 mb-28">
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-8 mb-10 relative z-40">
-        <div ref={ref} className="w-full">
+      <div className="max-w-6xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 place-content-center gap-8 mb-10 relative z-40">
+        <div ref={ref} className="">
           <motion.h1
             variants={{
               hidden: { opacity: 0, y: 40 },
@@ -51,8 +51,7 @@ const NewGamingWebSection = (props: Props) => {
               dynamic and interconnected network of gaming profiles.
             </span>
             <span className="block">
-              {' '}
-              Each player's profile is represented as a unique ERC-721{' '}
+              Each player's profile is represented as a unique ERC-721
             </span>
             <span className="block">
               NFT, complete with metadata unique to their gaming
@@ -61,7 +60,7 @@ const NewGamingWebSection = (props: Props) => {
           </motion.p>
         </div>
 
-        <div className="w-full grid grid-cols-2 gap-4 md:gap-8 relative">
+        <div className="grid grid-cols-2 gap-4 md:gap-8 relative">
           {HomepageNewGamingWebSection.map(
             ({ username, image, code }, index: number) => (
               <UserPills

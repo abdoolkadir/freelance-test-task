@@ -11,7 +11,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body>
-        <main className="relative container w-full mx-auto scroll-py-20">
+        <main className="relative w-full mx-auto scroll-py-20">
           <Header />
           {children}
         </main>
